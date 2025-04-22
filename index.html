@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>7th Monthsary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="sparkle-area">
+    <h1>Happy 7th Monthsary, My Love! 💕</h1>
+
+    <div class="photo-section">
+      <img src="your-image.png" alt="Us" class="photo" />
+    </div>
+
+    <button id="unlockBtn">Tap to Unlock Love Message 💌</button>
+
+    <div id="loveMessage" class="hidden">
+      <p class="message">
+        From the very first moment we met, my heart knew you were special.  
+        These 7 months have been the most beautiful chapter in my life.  
+        Thank you for your smile, your care, and every little moment we shared.  
+        I want you to know — you mean the world to me. 💖  
+        Here's to us, and to many more months and memories together.  
+        <br><br>
+        I love you deeply, truly, forever. 🥰
+      </p>
+    </div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="diewithasmile.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="sparkles.js"></script>
+  <script>
+    document.getElementById('unlockBtn').addEventListener('click', function() {
+      const message = document.getElementById('loveMessage');
+      message.classList.remove('hidden');
+      this.style.display = 'none'; // hide button
+    });
+  </script>
+</body>
+</html>
