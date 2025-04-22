@@ -19,4 +19,17 @@ const createHeart = () => {
     document.body.appendChild(sparkle);
     setTimeout(() => sparkle.remove(), 600);
   });
-  
+  <script>
+  const emojis = ["❤️", "🌹"];
+  const total = 30;
+
+  for (let i = 0; i < total; i++) {
+    const elem = document.createElement("div");
+    elem.className = "falling";
+    elem.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+    elem.style.left = Math.random() * 100 + "vw";
+    elem.style.animationDuration = (2 + Math.random() * 3) + "s";
+    elem.style.fontSize = (20 + Math.random() * 30) + "px";
+    document.body.appendChild(elem);
+  }
+</script>
